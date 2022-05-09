@@ -21,11 +21,11 @@ class HelloControllerTest {
 
     @Test
     void index() throws Exception {
-        assertEquals("Hello TAP multi-cluster git-ops", controller.index());
+        assertEquals("Hello TAP multi-cluster test", controller.index());
 
         mockMvc
             .perform(get("/"))
             .andExpect(status().isOk())
-            .andExpect(content().string("Hello TAP multi-cluster git-ops"));
+            .andExpect(content().string("Hello TAP multi-cluster test"));
     }
 }

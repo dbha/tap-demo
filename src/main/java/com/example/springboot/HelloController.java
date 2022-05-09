@@ -8,7 +8,7 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Hello TAP multi-cluster git-ops";
+		return "Hello TAP multi-cluster test";
 	}
 
 }
